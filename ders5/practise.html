@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.menu li a {
+    text-decoration: none;
+    color:var(--secondary)
+}
+.menu li{
+    background-color: black;
+    width: 300px;
+    margin-top: 1px;
+}
+.menu li a.active{
+    color:var(--primary);
+}
+
+.menu li a#urun ,ul li #blog,nav a.active{
+    color:var(--primary);
+    text-decoration: none;
+}
+:root{
+    --primary:green;
+    --secondary:blue;
+}
+</style>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#" class="active">Anasayfa</a></li>
+            <li><a href="#" id="urun">ürünler</a></li>
+            <li><a href="#" id="blog">blog</a></li>
+            <li><a href="#">iletişim</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
