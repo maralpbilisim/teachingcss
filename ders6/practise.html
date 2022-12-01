@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         ul{
+            list-style:none;
+            text-align: center;   
+        }
+      
+        li{
+            display: inline-block;
+            width: 100px;
+            background-color: grey;
+            text-align: center;
+            height: 30px;
+            padding-top:10px;
+           
+        }
+          
+        li a{
+            text-decoration: none;
+            font-size:20px ;
+            color:black
+        }
+        
+        li:hover{
+            background-color: green;
+            
+        }
+        
+        li:hover a{
+            color:white;
+        }
+        
+        #urun{
+            position: relative;
+        }
+        #list{
+        display:none;
+        }
+    #urun:hover #list{
+        display: inline-block;
+        position: absolute;
+        left: -60px;
+        top:30px;
+    } 
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li><a href="#">Ana Sayfa</a></li>
+        <li><a href="#" id="urun">Ürünler
+            <ul id="list">
+                <li>notebook</li>
+                <li>klavye</li>
+                <li>fare</li>
+            </ul>
+        </a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">İletişim</a></li>
+        </ul>
+        </nav>
+</body>
+</html>
