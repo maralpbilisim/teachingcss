@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* *{
+        color:red;
+    } */
+    h2{
+        font-size: 30px;
+    }
+    .header{
+        background-color: aqua;
+    }
+    .header h2{
+        color: green;
+    }
+    section:nth-child(3){
+        background-color: blue;
+    }
+    section#topbar img{
+        width: 300px;
+    }
+    #topbar nav ul li{
+        color: black;
+        list-style: square;
+    }
+    #sosyal-medya li{
+        display: inline;
+    }
+    section nav li{
+        font-size: 25px;
+    }
+    #topbar + section{
+        background-color: green;
+    }
+    #kutu img~span{
+        color:black;
+    }
+    #topbar nav li:first-child~li{
+        font-size: 40px;
+    }
+    #referanslar #kutu:hover img{
+        width: 500px;
+    }
+    #referanslar #kutu h3::before{
+        content:"...";
+    }
+    #topbar ul:first-child :nth-child(3):hover a::after{
+        content: "|||||";
+        color: red;
+    }
+    #topbar li:first-child:hover+li a::after{
+        content:"/////";
+      color:aqua;
+    }
+</style>
+<body>
+    <section class="header">
+        <h2>deneme</h2>
+        <p>deneme parağrafı</p>
+        <h2>2.başlık</h2>
+    </section>
+    <section class="header">
+        <h2>2.section başlık1</h2>
+    </section>
+  
+    <section id="topbar">
+        <div id="referanslar">
+        <div id="kutu">
+            <h3>image1</h3>
+        <img src="https://st.depositphotos.com/2735675/4454/i/950/depositphotos_44543229-stock-photo-turkey-flag-waving-on-the.jpg">
+        <span>1.bayrak</span><span>denemesi</span>
+            <h3>image2</h3>
+        <img src="https://st.depositphotos.com/2735675/4454/i/950/depositphotos_44543229-stock-photo-turkey-flag-waving-on-the.jpg">
+        <span>2.bayrak</span><span>denemesi</span>
+        </div>
+        </div>
+     <nav>
+        <ul>
+            <li>menü1</li>
+            <li><a href="#">menü2</a></li>
+            <li><a href="#">menü3</a></li>
+        </ul>
+        <ul id="sosyal-medya">
+            <li>menü3</li>
+            <li>menü4</li>
+            <li>menu5</li>
+        </ul>
+     </nav>
+    </section>
+    <section>
+        <p>4.section</p>
+    </section>
+</body>
+</html>

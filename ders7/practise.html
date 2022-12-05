@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu{
+            background-color: orange;
+            width: 400px;
+            opacity:0.7;
+            height: 30px;
+            text-align: center;
+        }
+        li{
+            display: inline-block;
+            margin-top: 5px;
+        }
+       
+        li::after{
+            content: "   |";
+            color:brown;
+            font-size: 20px;
+        }
+        #menu a:hover {
+            color:black;
+        }
+        #menu a{
+            text-decoration: none;
+            color: white;
+        }
+        li:first-child::before{
+            content:"<";
+            margin-right: 10px;
+            color:black;
+        }
+        li:last-child::after{
+            content:">";
+            margin-left: 10px;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Eylül</a></li>
+            <li><a href="#">Ekim</a></li>
+            <li><a href="#">Kasım</a></li>
+            <li><a href="#">Aralık</a></li>
+            <li><a href="#">Ocak</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
