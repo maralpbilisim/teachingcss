@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/6.0.0/css/all.min.css"/>
+<style>
+    table,th,td{
+        border:2px dotted;
+        border-collapse: collapse;
+    }
+    th{
+        width: 150px;
+        height: 30px;
+    }
+    td:nth-child(3){
+        text-align: center;
+    }
+    td:last-child{
+        text-align: right;
+    }
+    td{
+        padding: 10px;
+    }
+   tbody tr:hover{
+        background-color: aqua;
+        color:white;
+    }
+    tr:nth-child(even){
+        background-color: red;
+    }
+    tbody tr:nth-child(odd){
+        background-color: rgb(162, 255, 0);
+    }
+    thead tr{
+        background-color: aquamarine;
+    }
+    tfoot td:first-child{
+        text-align: right;
+    }
+</style>
+</head>
+<body>
+   
+    <table>
+        <thead>
+            <tr>
+                <th>Ürün kodu</th>
+                <th>Ürün adı</th>
+                <th>Miktar</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>154654</td>
+                <td>Notebook</td>
+                <td>1</td>
+                <td><i class="fa-solid fa-user"></i> <i class="fa-solid fa-user"></i></td>
+            </tr>
+            <tr>
+                <td>456466</td>
+                <td>Klavye</td>
+                <td>2</td>
+                <td>  <i class="fa-solid fa-user"></i> <i class="fa-solid fa-user"></i></td>
+            </tr>
+            <tr>
+                <td>154654</td>
+                <td>Notebook</td>
+                <td>1</td>
+                <td><i class="fa-solid fa-user"></i> <i class="fa-solid fa-user"></i></td>
+            </tr>
+            <tr>
+                <td>154654</td>
+                <td>Notebook</td>
+                <td>1</td>
+                <td><i class="fa-solid fa-user"></i> <i class="fa-solid fa-user"></i></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Toplam</td>
+                <td>12313</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

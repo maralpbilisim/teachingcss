@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/6.0.0/css/all.min.css"/>
+</head>
+<style>
+    #switch{
+        display: none;
+    }
+    i{
+       color:red;
+    }
+    ul{
+        background-color: gray;
+        width: 100px;
+        list-style: none;
+        padding: 10px;
+    }
+    li{
+        width: 100px;
+        margin-top: 5px;
+        color:white;
+    }
+    li::before{
+        content:"::";
+        margin-right: 10px;
+    }
+    li:hover{
+        color:black;
+    }
+    #menu{
+        display: none;
+    }
+    #switch:checked+ #menu{
+        display: block;
+    }
+</style>
+<body>
+    <label for="switch" ><i class="fa-solid fa-bars fa-2x"></i></label>
+    <input type="checkbox" id="switch">
+    <nav id="menu">
+        <ul>
+            <li>Anasayfa</li>
+            <li>Ürünler</li>
+            <li>Blog</li>
+        </ul>
+    </nav>
+</body>
+</html>
