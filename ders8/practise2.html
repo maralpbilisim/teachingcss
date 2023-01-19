@@ -11,6 +11,7 @@ awesome/6.0.0/css/all.min.css"/>
 <style>
     #switch{
         display: none;
+      
     }
     i{
        color:red;
@@ -25,6 +26,8 @@ awesome/6.0.0/css/all.min.css"/>
         width: 100px;
         margin-top: 5px;
         color:white;
+        transition: color 5s;
+        
     }
     li::before{
         content:"::";
@@ -34,10 +37,12 @@ awesome/6.0.0/css/all.min.css"/>
         color:black;
     }
     #menu{
-        display: none;
+        position: relative;
+        left: -200px;
+        transition: left 20s;
     }
     #switch:checked+ #menu{
-        display: block;
+    left:400px;  
     }
 </style>
 <body>
